@@ -1,11 +1,13 @@
 /* EX1) Write a selector to target the h1 in jumbotron */
 .jumbotron > .col-md-6 > h1 {
   background-color: rgb(161, 220, 228);
+  color: rgb(231, 125, 143);
 }
 
 /* EX2) Write a selector to target every children of the navbar */
+
 .nav > a {
-  color: plum;
+  color: plum !important;
 }
 
 /* EX3) Write a selector to target the "continue reading..." inside the jumbotron */
@@ -15,19 +17,43 @@
 
 /* EX4) Write a selector to target the first blogpost */
 .blog-main > :nth-child(2) {
-  background-color: pink;
+  background-color: rgb(240, 183, 216);
+  color: rgb(162, 36, 194);
 }
 
 /* EX5) Write a selector to target the "even" links in the navbar */
 nav > :nth-child(2n + 2) {
-  color: red !important;
+  color: rgb(30, 145, 190) !important;
 }
 /* EX6) Write a selector to target the last blog post */
 .blog-main > .blog-post:last-of-type {
-  background-color: burlywood;
+  background-color: rgb(241, 188, 228);
+  color: rgb(224, 43, 128);
 }
 /* EX7) Write a selector to target all the li into the first ordered-list in the sidebar ( Archives ) */
+aside > div:nth-child(2) > ol > li {
+  background-color: rgb(160, 196, 94);
+  margin-bottom: 0.5rem;
+}
 
 /* EX8) Write a selector to target the second post author */
+body
+  > main
+  > .row
+  > .blog-main
+  .blog-post:nth-of-type(2)
+  > .blog-post-meta
+  > a {
+  background-color: rgb(100, 235, 172) !important;
+  font-size: 2rem;
+}
 /* EX9) Write a selector to target the "back to top" link     #### EXTRA Try doing it without targeting the footer element directly */
+
+footer > p:nth-child(2) > a {
+  background-color: rgb(99, 200, 247);
+  font-size: 2rem;
+}
 /* EX10) Write a selector to target the footer */
+footer.blog-footer {
+  background-color: rgb(174, 227, 236);
+}
